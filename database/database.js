@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const data = require('./randomDataValGen.js');
 const albumArt = require('./albumArt.js');
 
-mongoose.connect('mongodb://database/suggestedTracks'); //potentially remove portnum
+mongoose.connect('mongodb://localhost/suggestedTracks'); //potentially remove portnum
 
 const db = mongoose.connection;
 db.on('error', (err) => console.log('error connecting to mongo', err));
