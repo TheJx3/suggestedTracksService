@@ -64,7 +64,7 @@ Shares: number
 Comments: number}
 
 Method: PUT
-URL: suggestedTracks/songs/:id/:category
+URL: suggestedTracks/songs/id/:id/category/:category
 Response: Increments a song's number of plays, likes, shares, or comments, based on the category passed in (0 => plays, 1 => likes, 2 => shares, 3 => comments)
 
 Method: DELETE
